@@ -1,9 +1,9 @@
 //setup express server 
-// import express from 'express'; 
-// import cors from 'cors'; 
-
 const express = require('express'); 
 const cors = require('cors'); 
+
+//Use .env file for environment variables.
+require('dotenv').config(); 
 
 //initialize express into "app" variable
 const app = express(); 
