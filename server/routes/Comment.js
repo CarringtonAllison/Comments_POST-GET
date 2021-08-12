@@ -9,3 +9,10 @@ router.post("/", async (req, res) => {
     res.json(comment); 
 }); 
 
+//GET all the post in the DB 
+router.get("/", async (req, res) => {
+    const commentList = await Comments.findAll(); 
+    res.json(commentList); 
+}); 
+
+module.exports = router; 
